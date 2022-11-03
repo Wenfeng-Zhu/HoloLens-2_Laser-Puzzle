@@ -50,7 +50,7 @@ You can also check documentation [[Bounds control — MRTK2](https://learn.micro
 
 About the creatation of UI element with MRTK, these documentations are recommanded: [[Buttons — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button?view=mrtkunity-2022-05)], [[Hand menu — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/hand-menu?view=mrtkunity-2022-05)], [[Interactable — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/interactable?view=mrtkunity-2022-05)], [[Near menu — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/near-menu?view=mrtkunity-2022-05)], [[Object collection — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/object-collection?view=mrtkunity-2022-05)]\
 Through these documentations and tutorials, you can customize the visual, auditory, and interactive effects of UI elements. For example, in `Package/Mixed Reality Toolkits Standard Assets/Aduio` you can find some provided audio assets. You can add them to your buttons with `PressableButtonHoloLens2` and `Audio Source` components.\
-![audio](/Images/audio.png "audio")
+![audio](/Images/Audio.png "audio")
 
 This project is mainly based on **Near Menu**.\
 The core function of UI elements, on the other hand, is the binding of click events. It could be set in `Button Config Helper` Cpmponent.
