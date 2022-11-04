@@ -1,0 +1,2 @@
+# Azure Spatial Anchors
+This part is the next extension of the project, based on the Azure Spatial Anchors feature and Azure Cloud Services, to achieve absolute positioning of real locations, as well as saving and exporting imported real environment data.
