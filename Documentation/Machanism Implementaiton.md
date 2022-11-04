@@ -14,16 +14,21 @@ To make the object respond to near articulated hand input, add the ``NearInterac
 As well as this, manipulation can be constrained by adding manipulation ``constraint`` components to the object. These are special components that work with manipulation and change the manipulation behaviour in some way. Subsequent ``BoundsControl`` components depend on this.
 
 ![ObjectManipulation](/Images/ObjectManipulation.PNG "ObjectManipulation")
+
 ``BoundsControl`` components could be trun on and off through script with `enabled` property.
 ```C#
 gameObject.GetComponent<ObjectManipulator>().enabled = true/false
 ```
 ### BoundsControl
+
 ![BoundsControl](/Images/mrtk_boundscontrol_main.png "BoundsControl")
+
 The ``BoundsControl`` script provides basic functionality for transforming objects in mixed reality. A bounds control will show a box around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the box allow scaling, rotating or translating the object. The bounds control also reacts to user input. On HoloLens 2, for example, the bounds control responds to finger proximity, providing visual feedback to help perceive the distance from the object.\
 In this project, this component is used for scaling and shape customization of mirror objects and wall objects in admin mode.\
 For its Activation behavior. There are several options to activate the bounds control interface.
+
 ![boundscontrol_activation.png](/Images/boundscontrol_activation.png "boundscontrol_activation.png")
+
 - Activate On Start: Bounds control becomes visible once the scene is started.
 - Activate By Proximity: Bounds control becomes visible when an articulated hand is close to the object.
 - Activate By Pointer: Bounds control becomes visible when it is targeted by a hand-ray pointer.
@@ -46,10 +51,12 @@ gameObject.GetComponent<BoundsControl>().enabled = true/false;
 ```
 You can also check documentation [[Bounds control — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/bounds-control?view=mrtkunity-2022-05#inspector-properties)]
 ### UI Element
+
 ![ui](/Images/ui.png "ui")
 
 About the creatation of UI element with MRTK, these documentations are recommanded: [[Buttons — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button?view=mrtkunity-2022-05)], [[Hand menu — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/hand-menu?view=mrtkunity-2022-05)], [[Interactable — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/interactable?view=mrtkunity-2022-05)], [[Near menu — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/near-menu?view=mrtkunity-2022-05)], [[Object collection — MRTK2](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/object-collection?view=mrtkunity-2022-05)]\
-Through these documentations and tutorials, you can customize the visual, auditory, and interactive effects of UI elements. For example, in `Package/Mixed Reality Toolkits Standard Assets/Aduio` you can find some provided audio assets. You can add them to your buttons with `PressableButtonHoloLens2` and `Audio Source` components.\
+Through these documentations and tutorials, you can customize the visual, auditory, and interactive effects of UI elements. For example, in `Package/Mixed Reality Toolkits Standard Assets/Aduio` you can find some provided audio assets. You can add them to your buttons with `PressableButtonHoloLens2` and `Audio Source` components.
+
 ![audio](/Images/Audio.PNG "audio")
 
 This project is mainly based on **Near Menu**.\
