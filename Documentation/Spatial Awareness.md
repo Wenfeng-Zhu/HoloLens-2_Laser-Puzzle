@@ -33,6 +33,7 @@ public static bool Raycast (Vector3 origin, Vector3 direction, float maxDistance
 ```
 You may optionally provide a LayerMask, to filter out any Colliders you aren't interested in generating collisions with.\
 You can edit layers setting in **Edit->Project Settings-> Tags and Layers**. If you didn't enter any layerMask, that means ray will interact with all layers except for `Builtin Layer 2: Ignore Raycast`.
+
 ![layers](/Images/layers.PNG "layers")
 
 ## ToDo: Calling the spatial awareness system via code
