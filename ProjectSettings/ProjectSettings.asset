@@ -135,7 +135,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 0}
+  - {fileID: -1004746778299859784, guid: 1e4c65dcc5f87d44b8ef3432c9d1a880, type: 2}
+  - {fileID: 8900957424227565076, guid: 55c499a15a4a11b43bf4f09341c5a854, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -614,11 +618,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: LaserPuzzleStarter
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 8065b29c7d12da01
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: Laser_Puzzle

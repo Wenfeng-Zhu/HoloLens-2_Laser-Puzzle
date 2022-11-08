@@ -27,3 +27,31 @@ Note: Some of these workloads may be pre-installed if you've installed Unity fir
 It is highly recommended to complete the first three tutorials on this page [[HoloLens 2 fundamentals: develop mixed reality applications](https://learn.microsoft.com/en-us/training/paths/beginner-hololens-2-tutorials/)] to learn about basic HoloLens development.
 
 Note: After completing the tutorial, you can build and deploy the scene to a HoloLens device or to the HoloLens simulator. The tutorial of HoloLens Simulator could be find in this page [[Using the HoloLens Emulator](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator)]
+
+## Deployment
+Once the scenario is finished, we need to deploy it to a HoloLens device to test and debug it in a real environment.
+1. In Unity on the menu bar, select File > Build Settings....
+
+2. In the Build Settings window, select the Add Open Scenes button. This adds your current scene to the Scenes In Build list.
+
+![buidl](/Images/build.PNG "buidl")
+
+3. Select the folder you chose and then click Select Folder to start the build process.
+4. After Unity has finished building the project, a Windows Explorer window will open to the project root directory. Navigate into the folder that contains your newly-created solution file.
+5. Find the solution file located inside this folder and open it.
+
+![solution](/Images/solution.PNG "solution")
+
+6. Set the deployment configuration like below:
+
+![deployment](/Images/deployment.PNG "deployment")
+
+Note: You may meet a error like this:
+```
+Could not find SDK "WindowsMobile, Version=10.0.xxxxx.0" error
+```
+You can try to reinstallation Windows SDK here: [[Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)] or Delete the releted reference in "**Solution Explorer-->Laser_Puzzle-->Referemces**"
+
+![error](/Images/error.PNG "error")
+
+7. After starting the deployment, wait for the application to be deployed to the device.
