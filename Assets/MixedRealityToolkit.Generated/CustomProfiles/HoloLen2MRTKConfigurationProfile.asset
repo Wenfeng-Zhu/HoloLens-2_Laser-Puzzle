@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: HoloLen2MRTKConfigurationProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  experienceSettingsProfile: {fileID: 11400000, guid: 03faac27657fdf048a8fafbf63b399fd, type: 2}
+  experienceSettingsProfile: {fileID: 11400000, guid: 1ccbb3b1d759d6a49b4161a958329d9d, type: 2}
   targetExperienceScale: 3
   enableCameraSystem: 1
-  cameraProfile: {fileID: 11400000, guid: 6b1e0a80e7a61fd4292f0a9e2c2cf114, type: 2}
+  cameraProfile: {fileID: 0}
   cameraSystemType:
     reference: Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSystem,
       Microsoft.MixedReality.Toolkit.Services.CameraSystem
