@@ -1,4 +1,4 @@
-# Machanism Implementation
+# Mechanism Implementation
 Here you can find the relevant technical descriptions of the project implementation.
 ## Collider and Rigidbody
 Collider and Rigibody are Unity Script APIs that give objects physical interaction. You can check the offical documetation to see some details: [[Scripting API: Collider](https://docs.unity3d.com/2020.3/Documentation/ScriptReference/Collider.html)], [[Scripting API: Rigibody](https://docs.unity3d.com/2020.3/Documentation/ScriptReference/Rigidbody.html)]\
@@ -90,7 +90,7 @@ These two are used to bind the number of objects in the UI menu and to warn when
 
 Note: The current solution has a limit on the number, i.e., the maximum number depends on the number of prefabricated objects, and the objects may be increased or decreased in the future using initial generation, but the performance resource usage still needs to be tested.
 
-## Laser Machanism
+## Laser Mechanism
 This feature is built based on [Ray - Scripting API - Unity - Manual](https://docs.unity3d.com/ScriptReference/Ray.html) and [Scripting API: Physics.Raycast - Unity - Manual](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html), [Scripting API: RaycastHit - Unity - Manual](https://docs.unity3d.com/ScriptReference/RaycastHit.html) these three APIs in Unity.
 
 1.  **Ray** is an infinite line starting at origin and going in some direction.
@@ -122,7 +122,7 @@ RaycastHit hit;
 //the collision information has been saved in [hit] when the collision happened
 Physics.Raycast(ray, out hit, 30)
 ```
-4. **Reflection Machanism**,  After obtaining the collision information through ``RaycastHit``, we can simulate the reflection effect by verifying the tag of the collision object and emit a new ray through the normal direction of the collision angle.
+4. **Reflection Mechanism**,  After obtaining the collision information through ``RaycastHit``, we can simulate the reflection effect by verifying the tag of the collision object and emit a new ray through the normal direction of the collision angle.
 ```C#
 //Used to save all currently collision point locations.
 List<Vector3> laserIndices = new List<Vector3>();
@@ -183,7 +183,7 @@ public class ShootLaser : MonoBehaviour
     }
 }
 ```
-``LaserBeam Class`` is used to execute the **Laser-Machanism** I disscussed above. And use the `Destroy` function to make sure we always have only one LaserBeam object.
+``LaserBeam Class`` is used to execute the **Laser-Mechanism** I disscussed above. And use the `Destroy` function to make sure we always have only one LaserBeam object.
 
 ## Checkpoint
 The mechanism  of CheckPoint is actually the same as the above-mentioned ray collision detection. Through the collision information to get the object of collision, and re-set its color.
