@@ -5,5 +5,5 @@ You can find the documentations of project in folder `Documentation`, they are u
 There are four documentations in this folder:
 - **VS&Unity Set-up**: Visual studio and uity setup instructions/Deployment setting
 - **Game Objects**: Brief description of the game object
-- **Machanism**: Relevant technical descriptions of the project implementation
+- **Mechanism**: Relevant technical descriptions of the project implementation
 - **Spatial Awareness**: Description of spatial awareness technology based on HoloLens MRTK.
